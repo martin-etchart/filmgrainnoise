@@ -1,0 +1,40 @@
+******** Denoising de grano fotográfico ***********
+
+Facultad de ingeniería. Universidad de la Republica.
+Tratamiento Estadístico de Señales
+Trabajo de fin de curso | Curso 2010
+
+Martin Etchart | mrtn.etchart@gmail.com
+
+Tutor: Pablo Musé
+***************************************************
+
+El trabajo esta basado principalmente en el artículo:
+Importance Sampling-Based Unscented Kalman Filter 
+for Film Grain Noise Removal.
+G. Subrahmanyam, A. Rajagoplan, R. Aravind.
+
+Consiste en una implementación en MATLAB del filtro
+con algunas variantes como se explica en la monografía.
+
+****************************************************
+
+Para correr el filtro se debe agregar al path
+todas las carpetas y subcarpetas de 'Denoising de 
+grano fotografico' y ejecutar 'FilmGrainNoise.m'
+en donde se despliega un menú. Se puede correr el filtro
+para degradación sintética o para degradación real.
+
+Se pueden ingresar ciertos parámetros así como el nombre
+de archivo de la imagen a filtrar. El programa ya trae 
+estos parámetros cargados por defecto.
+
+El filtro consiste en una función 'fgdenoise.m' que 
+toma la imagen de entrada y los parámetros Sv y Gamma
+y devuelve la imagen filtrada.
+
+Adicionalmente se creo la función 'fgnsynth.m' que 
+genera sobre la imagen de entrada ruido de grano
+sintético y devuelve la imagen degradada.
+
+
